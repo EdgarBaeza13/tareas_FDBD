@@ -145,9 +145,9 @@
             condicionLabel.AutoSize = true;
             condicionLabel.Location = new System.Drawing.Point(313, 211);
             condicionLabel.Name = "condicionLabel";
-            condicionLabel.Size = new System.Drawing.Size(56, 13);
+            condicionLabel.Size = new System.Drawing.Size(66, 13);
             condicionLabel.TabIndex = 15;
-            condicionLabel.Text = "condicion:";
+            condicionLabel.Text = "Descripcion:";
             // 
             // postgresDataSet
             // 
