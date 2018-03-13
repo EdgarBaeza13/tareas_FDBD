@@ -216,9 +216,9 @@
             idLabel.AutoSize = true;
             idLabel.Location = new System.Drawing.Point(162, 108);
             idLabel.Name = "idLabel";
-            idLabel.Size = new System.Drawing.Size(18, 13);
+            idLabel.Size = new System.Drawing.Size(37, 13);
             idLabel.TabIndex = 1;
-            idLabel.Text = "id:";
+            idLabel.Text = "Marca";
             // 
             // idTextBox
             // 
