@@ -225,11 +225,11 @@
             // nombreLabel
             // 
             nombreLabel.AutoSize = true;
-            nombreLabel.Location = new System.Drawing.Point(65, 78);
+            nombreLabel.Location = new System.Drawing.Point(3, 78);
             nombreLabel.Name = "nombreLabel";
-            nombreLabel.Size = new System.Drawing.Size(45, 13);
+            nombreLabel.Size = new System.Drawing.Size(107, 13);
             nombreLabel.TabIndex = 3;
-            nombreLabel.Text = "nombre:";
+            nombreLabel.Text = "nombre del producto:";
             // 
             // nombreTextBox
             // 

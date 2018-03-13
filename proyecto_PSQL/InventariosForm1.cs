@@ -31,5 +31,10 @@ namespace proyecto_PSQL
             this.inventariosTableAdapter.Fill(this.postgresDataSet.inventarios);
 
         }
+
+        private void nu_productoLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

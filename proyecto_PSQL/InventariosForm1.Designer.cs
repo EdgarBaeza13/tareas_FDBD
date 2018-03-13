@@ -236,6 +236,7 @@
             nu_productoLabel.Size = new System.Drawing.Size(67, 13);
             nu_productoLabel.TabIndex = 3;
             nu_productoLabel.Text = "nu producto:";
+            nu_productoLabel.Click += new System.EventHandler(this.nu_productoLabel_Click);
             // 
             // nu_productoTextBox
             // 
