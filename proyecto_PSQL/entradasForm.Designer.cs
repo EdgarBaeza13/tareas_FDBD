@@ -1,6 +1,6 @@
 ﻿namespace proyecto_PSQL
 {
-    partial class entradas
+    partial class entradasForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(entradas));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(entradasForm));
             System.Windows.Forms.Label idLabel;
             System.Windows.Forms.Label nu_productoLabel;
             System.Windows.Forms.Label nu_ubicacionLabel;
@@ -97,7 +97,6 @@
             this.tableAdapterManager.categoriasTableAdapter = null;
             this.tableAdapterManager.entradasTableAdapter = this.entradasTableAdapter;
             this.tableAdapterManager.inventariosTableAdapter = null;
-            this.tableAdapterManager.ubicacionesTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = proyecto_PSQL.postgresDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // entradasBindingNavigator
@@ -227,7 +226,7 @@
             // idLabel
             // 
             idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(337, 105);
+            idLabel.Location = new System.Drawing.Point(61, 73);
             idLabel.Name = "idLabel";
             idLabel.Size = new System.Drawing.Size(18, 13);
             idLabel.TabIndex = 1;
@@ -236,7 +235,7 @@
             // idTextBox
             // 
             this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.entradasBindingSource, "id", true));
-            this.idTextBox.Location = new System.Drawing.Point(416, 102);
+            this.idTextBox.Location = new System.Drawing.Point(140, 70);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.Size = new System.Drawing.Size(200, 20);
             this.idTextBox.TabIndex = 2;
@@ -244,7 +243,7 @@
             // nu_productoLabel
             // 
             nu_productoLabel.AutoSize = true;
-            nu_productoLabel.Location = new System.Drawing.Point(337, 131);
+            nu_productoLabel.Location = new System.Drawing.Point(61, 99);
             nu_productoLabel.Name = "nu_productoLabel";
             nu_productoLabel.Size = new System.Drawing.Size(67, 13);
             nu_productoLabel.TabIndex = 3;
@@ -253,7 +252,7 @@
             // nu_productoTextBox
             // 
             this.nu_productoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.entradasBindingSource, "nu_producto", true));
-            this.nu_productoTextBox.Location = new System.Drawing.Point(416, 128);
+            this.nu_productoTextBox.Location = new System.Drawing.Point(140, 96);
             this.nu_productoTextBox.Name = "nu_productoTextBox";
             this.nu_productoTextBox.Size = new System.Drawing.Size(200, 20);
             this.nu_productoTextBox.TabIndex = 4;
@@ -261,7 +260,7 @@
             // nu_ubicacionLabel
             // 
             nu_ubicacionLabel.AutoSize = true;
-            nu_ubicacionLabel.Location = new System.Drawing.Point(337, 157);
+            nu_ubicacionLabel.Location = new System.Drawing.Point(61, 125);
             nu_ubicacionLabel.Name = "nu_ubicacionLabel";
             nu_ubicacionLabel.Size = new System.Drawing.Size(71, 13);
             nu_ubicacionLabel.TabIndex = 5;
@@ -270,7 +269,7 @@
             // nu_ubicacionTextBox
             // 
             this.nu_ubicacionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.entradasBindingSource, "nu_ubicacion", true));
-            this.nu_ubicacionTextBox.Location = new System.Drawing.Point(416, 154);
+            this.nu_ubicacionTextBox.Location = new System.Drawing.Point(140, 122);
             this.nu_ubicacionTextBox.Name = "nu_ubicacionTextBox";
             this.nu_ubicacionTextBox.Size = new System.Drawing.Size(200, 20);
             this.nu_ubicacionTextBox.TabIndex = 6;
@@ -278,7 +277,7 @@
             // cantidadLabel
             // 
             cantidadLabel.AutoSize = true;
-            cantidadLabel.Location = new System.Drawing.Point(337, 183);
+            cantidadLabel.Location = new System.Drawing.Point(61, 151);
             cantidadLabel.Name = "cantidadLabel";
             cantidadLabel.Size = new System.Drawing.Size(51, 13);
             cantidadLabel.TabIndex = 7;
@@ -287,7 +286,7 @@
             // cantidadTextBox
             // 
             this.cantidadTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.entradasBindingSource, "cantidad", true));
-            this.cantidadTextBox.Location = new System.Drawing.Point(416, 180);
+            this.cantidadTextBox.Location = new System.Drawing.Point(140, 148);
             this.cantidadTextBox.Name = "cantidadTextBox";
             this.cantidadTextBox.Size = new System.Drawing.Size(200, 20);
             this.cantidadTextBox.TabIndex = 8;
@@ -295,7 +294,7 @@
             // facturaLabel
             // 
             facturaLabel.AutoSize = true;
-            facturaLabel.Location = new System.Drawing.Point(337, 209);
+            facturaLabel.Location = new System.Drawing.Point(61, 177);
             facturaLabel.Name = "facturaLabel";
             facturaLabel.Size = new System.Drawing.Size(43, 13);
             facturaLabel.TabIndex = 9;
@@ -304,7 +303,7 @@
             // facturaTextBox
             // 
             this.facturaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.entradasBindingSource, "factura", true));
-            this.facturaTextBox.Location = new System.Drawing.Point(416, 206);
+            this.facturaTextBox.Location = new System.Drawing.Point(140, 174);
             this.facturaTextBox.Name = "facturaTextBox";
             this.facturaTextBox.Size = new System.Drawing.Size(200, 20);
             this.facturaTextBox.TabIndex = 10;
@@ -312,7 +311,7 @@
             // fecha_facturaLabel
             // 
             fecha_facturaLabel.AutoSize = true;
-            fecha_facturaLabel.Location = new System.Drawing.Point(337, 236);
+            fecha_facturaLabel.Location = new System.Drawing.Point(61, 204);
             fecha_facturaLabel.Name = "fecha_facturaLabel";
             fecha_facturaLabel.Size = new System.Drawing.Size(73, 13);
             fecha_facturaLabel.TabIndex = 11;
@@ -321,7 +320,7 @@
             // fecha_facturaDateTimePicker
             // 
             this.fecha_facturaDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.entradasBindingSource, "fecha_factura", true));
-            this.fecha_facturaDateTimePicker.Location = new System.Drawing.Point(416, 232);
+            this.fecha_facturaDateTimePicker.Location = new System.Drawing.Point(140, 200);
             this.fecha_facturaDateTimePicker.Name = "fecha_facturaDateTimePicker";
             this.fecha_facturaDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.fecha_facturaDateTimePicker.TabIndex = 12;
@@ -329,7 +328,7 @@
             // montoLabel
             // 
             montoLabel.AutoSize = true;
-            montoLabel.Location = new System.Drawing.Point(337, 261);
+            montoLabel.Location = new System.Drawing.Point(61, 229);
             montoLabel.Name = "montoLabel";
             montoLabel.Size = new System.Drawing.Size(39, 13);
             montoLabel.TabIndex = 13;
@@ -338,7 +337,7 @@
             // montoTextBox
             // 
             this.montoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.entradasBindingSource, "monto", true));
-            this.montoTextBox.Location = new System.Drawing.Point(416, 258);
+            this.montoTextBox.Location = new System.Drawing.Point(140, 226);
             this.montoTextBox.Name = "montoTextBox";
             this.montoTextBox.Size = new System.Drawing.Size(200, 20);
             this.montoTextBox.TabIndex = 14;
@@ -346,7 +345,7 @@
             // condicionLabel
             // 
             condicionLabel.AutoSize = true;
-            condicionLabel.Location = new System.Drawing.Point(337, 287);
+            condicionLabel.Location = new System.Drawing.Point(61, 255);
             condicionLabel.Name = "condicionLabel";
             condicionLabel.Size = new System.Drawing.Size(56, 13);
             condicionLabel.TabIndex = 15;
@@ -355,12 +354,12 @@
             // condicionTextBox
             // 
             this.condicionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.entradasBindingSource, "condicion", true));
-            this.condicionTextBox.Location = new System.Drawing.Point(416, 284);
+            this.condicionTextBox.Location = new System.Drawing.Point(140, 252);
             this.condicionTextBox.Name = "condicionTextBox";
             this.condicionTextBox.Size = new System.Drawing.Size(200, 20);
             this.condicionTextBox.TabIndex = 16;
             // 
-            // entradas
+            // entradasForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -382,9 +381,9 @@
             this.Controls.Add(condicionLabel);
             this.Controls.Add(this.condicionTextBox);
             this.Controls.Add(this.entradasBindingNavigator);
-            this.Name = "entradas";
-            this.Text = "entradas";
-            this.Load += new System.EventHandler(this.entradas_Load);
+            this.Name = "entradasForm";
+            this.Text = "entradasForm";
+            this.Load += new System.EventHandler(this.entradasForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.postgresDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.entradasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.entradasBindingNavigator)).EndInit();

@@ -37,8 +37,8 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Threading.Tasks.Extensions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.3.0\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll</HintPath>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.1.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.4.0\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -51,29 +51,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="entradas.cs">
+    <Compile Include="entradasForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="entradas.Designer.cs">
-      <DependentUpon>entradas.cs</DependentUpon>
+    <Compile Include="entradasForm.Designer.cs">
+      <DependentUpon>entradasForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="FormDis.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form3.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="FormDis.Designer.cs">
+      <DependentUpon>FormDis.cs</DependentUpon>
     </Compile>
     <Compile Include="postgresDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -100,17 +88,11 @@
     <Compile Include="ventana x.Designer.cs">
       <DependentUpon>ventana x.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="entradas.resx">
-      <DependentUpon>entradas.cs</DependentUpon>
+    <EmbeddedResource Include="entradasForm.resx">
+      <DependentUpon>entradasForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="FormDis.resx">
+      <DependentUpon>FormDis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="productos.resx">
       <DependentUpon>productos.cs</DependentUpon>

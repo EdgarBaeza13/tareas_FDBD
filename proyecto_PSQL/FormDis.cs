@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace proyecto_PSQL
 {
-    public partial class Form2 : Form
+    public partial class FormDis : Form
     {
-        public Form2()
+        public FormDis()
         {
             InitializeComponent();
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-            // TODO: esta línea de código carga datos en la tabla 'postgresDataSet.categorias' Puede moverla o quitarla según sea necesario.
-            this.categoriasTableAdapter.Fill(this.postgresDataSet.categorias);
-
         }
 
         private void categoriasBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -29,6 +22,13 @@ namespace proyecto_PSQL
             this.Validate();
             this.categoriasBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.postgresDataSet);
+
+        }
+
+        private void FormDis_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'postgresDataSet.categorias' Puede moverla o quitarla según sea necesario.
+            this.categoriasTableAdapter.Fill(this.postgresDataSet.categorias);
 
         }
     }

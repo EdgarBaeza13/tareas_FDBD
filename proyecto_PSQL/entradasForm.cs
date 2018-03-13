@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace proyecto_PSQL
 {
-    public partial class entradas : Form
+    public partial class entradasForm : Form
     {
-        public entradas()
+        public entradasForm()
         {
             InitializeComponent();
         }
@@ -25,7 +25,7 @@ namespace proyecto_PSQL
 
         }
 
-        private void entradas_Load(object sender, EventArgs e)
+        private void entradasForm_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'postgresDataSet.entradas' Puede moverla o quitarla según sea necesario.
             this.entradasTableAdapter.Fill(this.postgresDataSet.entradas);

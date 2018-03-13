@@ -1,16 +1,16 @@
 ﻿namespace proyecto_PSQL
 {
-    partial class Form1
+    partial class FormDis
     {
         /// <summary>
-        /// Variable del diseñador necesaria.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Limpiar los recursos que se estén usando.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,16 +20,18 @@
             base.Dispose(disposing);
         }
 
-        #region Código generado por el Diseñador de Windows Forms
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDis));
+            System.Windows.Forms.Label idLabel;
+            System.Windows.Forms.Label nombreLabel;
             this.postgresDataSet = new proyecto_PSQL.postgresDataSet();
             this.categoriasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.categoriasTableAdapter = new proyecto_PSQL.postgresDataSetTableAdapters.categoriasTableAdapter();
@@ -47,14 +49,14 @@
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.categoriasBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.categoriasDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idTextBox = new System.Windows.Forms.TextBox();
+            this.nombreTextBox = new System.Windows.Forms.TextBox();
+            idLabel = new System.Windows.Forms.Label();
+            nombreLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.postgresDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriasBindingNavigator)).BeginInit();
             this.categoriasBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.categoriasDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // postgresDataSet
@@ -77,7 +79,6 @@
             this.tableAdapterManager.categoriasTableAdapter = this.categoriasTableAdapter;
             this.tableAdapterManager.entradasTableAdapter = null;
             this.tableAdapterManager.inventariosTableAdapter = null;
-            this.tableAdapterManager.ubicacionesTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = proyecto_PSQL.postgresDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // categoriasBindingNavigator
@@ -106,7 +107,7 @@
             this.categoriasBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.categoriasBindingNavigator.Name = "categoriasBindingNavigator";
             this.categoriasBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.categoriasBindingNavigator.Size = new System.Drawing.Size(800, 25);
+            this.categoriasBindingNavigator.Size = new System.Drawing.Size(387, 25);
             this.categoriasBindingNavigator.TabIndex = 0;
             this.categoriasBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -204,47 +205,58 @@
             this.categoriasBindingNavigatorSaveItem.Text = "Guardar datos";
             this.categoriasBindingNavigatorSaveItem.Click += new System.EventHandler(this.categoriasBindingNavigatorSaveItem_Click);
             // 
-            // categoriasDataGridView
+            // idLabel
             // 
-            this.categoriasDataGridView.AutoGenerateColumns = false;
-            this.categoriasDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.categoriasDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2});
-            this.categoriasDataGridView.DataSource = this.categoriasBindingSource;
-            this.categoriasDataGridView.Location = new System.Drawing.Point(150, 34);
-            this.categoriasDataGridView.Name = "categoriasDataGridView";
-            this.categoriasDataGridView.Size = new System.Drawing.Size(300, 220);
-            this.categoriasDataGridView.TabIndex = 1;
+            idLabel.AutoSize = true;
+            idLabel.Location = new System.Drawing.Point(65, 52);
+            idLabel.Name = "idLabel";
+            idLabel.Size = new System.Drawing.Size(18, 13);
+            idLabel.TabIndex = 1;
+            idLabel.Text = "id:";
             // 
-            // dataGridViewTextBoxColumn1
+            // idTextBox
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "id";
-            this.dataGridViewTextBoxColumn1.HeaderText = "id";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.categoriasBindingSource, "id", true));
+            this.idTextBox.Location = new System.Drawing.Point(116, 49);
+            this.idTextBox.Name = "idTextBox";
+            this.idTextBox.Size = new System.Drawing.Size(100, 20);
+            this.idTextBox.TabIndex = 2;
             // 
-            // dataGridViewTextBoxColumn2
+            // nombreLabel
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "nombre";
-            this.dataGridViewTextBoxColumn2.HeaderText = "nombre";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            nombreLabel.AutoSize = true;
+            nombreLabel.Location = new System.Drawing.Point(65, 78);
+            nombreLabel.Name = "nombreLabel";
+            nombreLabel.Size = new System.Drawing.Size(45, 13);
+            nombreLabel.TabIndex = 3;
+            nombreLabel.Text = "nombre:";
             // 
-            // Form1
+            // nombreTextBox
+            // 
+            this.nombreTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.categoriasBindingSource, "nombre", true));
+            this.nombreTextBox.Location = new System.Drawing.Point(116, 75);
+            this.nombreTextBox.Name = "nombreTextBox";
+            this.nombreTextBox.Size = new System.Drawing.Size(100, 20);
+            this.nombreTextBox.TabIndex = 4;
+            // 
+            // FormDis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.categoriasDataGridView);
+            this.ClientSize = new System.Drawing.Size(387, 213);
+            this.Controls.Add(idLabel);
+            this.Controls.Add(this.idTextBox);
+            this.Controls.Add(nombreLabel);
+            this.Controls.Add(this.nombreTextBox);
             this.Controls.Add(this.categoriasBindingNavigator);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Name = "FormDis";
+            this.Text = "FormDis";
+            this.Load += new System.EventHandler(this.FormDis_Load);
             ((System.ComponentModel.ISupportInitialize)(this.postgresDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriasBindingNavigator)).EndInit();
             this.categoriasBindingNavigator.ResumeLayout(false);
             this.categoriasBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.categoriasDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -269,9 +281,7 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton categoriasBindingNavigatorSaveItem;
-        private System.Windows.Forms.DataGridView categoriasDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.TextBox idTextBox;
+        private System.Windows.Forms.TextBox nombreTextBox;
     }
 }
-
